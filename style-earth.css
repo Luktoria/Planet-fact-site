@@ -1,0 +1,265 @@
+/* univerzal styles */
+
+body {
+    background-color: #070724;
+    background-image: url(./assets/background-stars.svg); 
+    color: #FFFFFF;
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    color: #bfbfc7;
+}
+
+
+
+nav li {
+    display: inline-block;
+    margin-right: 5%;
+}
+
+nav li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+
+hr {
+    border: 1px solid #9797974d;
+}
+
+
+/* navbar styles */ 
+
+.navbar-div {
+    height: 75px;
+    position: relative;
+    padding: 1%;
+}
+
+.page-title {
+    display: inline-block;
+    width: 50%;
+    float:left;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: -1.5px;
+    margin-top: 0.75%;
+  top: 50%;
+}
+
+.planet-variations {
+    display: inline-block;
+    width: 50%;
+    float:left;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2.6px;
+    text-align: center;
+    margin: 0;
+  position: absolute;
+  top: 50%;
+}
+
+
+/* Planet facts div styles */
+
+#overview {
+    display: block;
+}
+
+.facts {
+    padding: 7%;
+    height: 500px;
+}
+
+
+/* Planet picture styles */
+
+.planet-picture-container {
+    display: inline-block;
+    float: left;
+    padding: 0 20%;
+}
+
+
+/* Planet facts text styles */ 
+
+.planet-info {
+    display: inline-block;
+    width: 18%;
+    float: left;
+}
+
+.planet-info h1 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+.planet-fact-text {
+    padding-bottom: 20px;
+}
+
+.planet-fact-text p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: #bfbfc7;
+}
+
+.planet-fact-text span {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    color: #838391;
+    
+}
+
+.planet-fact-text a {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    color: #838391;
+}
+
+
+/* button styles */ 
+
+.button {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: 25px;
+    letter-spacing: 2.6px;
+    border: 1px solid #38384F;
+    margin: 10px 0;
+    padding: 5%;
+}
+
+.button span {
+    color: #838391;
+    padding: 0 15px;
+}
+
+/*.button:hover {
+    cursor: pointer;
+    background-color: #38384F;
+} */
+
+
+#overview-button {
+    background-color: #6f2ed6; 
+    
+    }
+
+
+/* manipulated things */ 
+
+#earth-overview-paragraph {
+    display: block;
+    height: 150px;
+}
+
+#earth-interior-paragraph {
+    display: none;
+    height: 150px;
+}
+
+#earth-geology-paragraph {
+    display: none;
+    height: 150px;
+}
+
+#earth-geology-img {
+    height: 200px;
+    width: auto;
+    position: absolute;
+    z-index: 1;    
+    left: 32%;
+    top: 60%;
+    display: none;
+}
+
+
+/* Info cards styles */
+
+.block-div {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+    
+}
+
+.planet-info-cards {
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    border: 1px solid #9797974d; 
+    width: 25%;
+    margin: 10px;
+    padding: 1% 1% 1% 2%;
+}
+
+.container h2 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 40px;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.container h4 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #838391;
+}
+
+@media screen and (max-width: 1260px) and (min-width: 500px) {
+
+
+.navbar-div {
+    height: 120px;
+}
+
+.page-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav li {
+    margin-right: 2%;
+    margin-top: 30px;
+}
+
+.planet-variations {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.planet-picture-container {
+    display: block;
+    float:none;
+
+    /* padding: 0 20%; */
+}
+
+.planet-picture-container img {
+    height: 300px;
+}
+
+
+}
