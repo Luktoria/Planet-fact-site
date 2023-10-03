@@ -19,13 +19,13 @@
 <body>
 
 <nav>
-  <div class="navbar-div">
+  <div class="navbar-div"> 
 
   <div class="page-title">
     <span>The planets</span>
   </div>
 
-  <div class="planet-variations">
+  <div class="planet-variations" >
     <ul>
       <li>Mercury</li>
       <li>Venus</li>
@@ -37,8 +37,54 @@
       <li>Neptune</li>
     </ul>
   </div>
-  
+  <div class="hamburger-container">
+    <img src="./assets/icon-hamburger.svg" alt="hamburger-icon" id="hamburger-icon">
+    </div>
 </div>
+
+
+
+<!-- Mobile-only navbar -->
+<div class="planet-variations-mobile" id="mobile-button">
+  <ul>
+    <li class="planet mercury">Mercury <span> > </span></li>
+    <hr>
+    <li class="planet venus">Venus <span> > </span></li>
+    <hr>
+    <li class="planet earth">Earth <span> > </span></li>
+    <hr>
+    <li class="planet mars">Mars <span> > </span> </li>
+    <hr>
+    <li class="planet jupiter">Jupiter <span> > </span> </li>
+    <hr>
+    <li class="planet saturn">Saturn <span> > </span> </li>
+    <hr>
+    <li class="planet uranus">Uranus <span> > </span> </li>
+    <hr>
+    <li class="planet neptune">Neptune <span> > </span> </li>
+  </ul>
+</div>
+
+<!-- Mobile-only buttons for planets-->
+
+<div class="mobile-buttons-container">
+
+  <div class="button overview-button mobile-overview"  > <!--id="overview-button"--> 
+    Overview 
+  </div>
+  
+  <div class="button structure-button mobile-structure"  > <!--id="structure-button"-->
+   Structure
+  </div>
+  
+  <div class="button surface-button mobile-surface"  > <!-- id="surface-button" -->
+   Surface
+  </div>
+  
+  </div>
+
+
+
 </nav>
 <hr>
 
@@ -51,6 +97,9 @@
       </div>
 
   <div class="planet-info">
+    
+
+  <div class="planet-heading-facts"> 
   <h1>Earth</h1>
 
   <div class="planet-fact-text" id="overview">
@@ -76,19 +125,24 @@
   <span>Source :</span> <a id="anchor-ref" href="https://en.wikipedia.org/wiki/Earth">Wikipedia</a> <img src="./assets/icon-source.svg" alt="source-icon">    
   
 </div>
-
+</div> 
 <!-- Facts buttons start-->
 
-<div class="button " id="overview-button">
+
+<div class="buttons-container" id="web-button" >
+
+<div class="button overview-button"  > <!--id="overview-button"--> 
   <span>01</span> Overview 
 </div>
 
-<div class="button" id="structure-button">
+<div class="button structure-button"  > <!--id="structure-button"-->
   <span>02</span> Internal Structure
 </div>
 
-<div class="button" id="surface-button">
+<div class="button surface-button"  > <!-- id="surface-button" -->
   <span>03</span> Surface Geology
+</div>
+
 </div>
 
 </div>

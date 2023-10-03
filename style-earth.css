@@ -5,6 +5,7 @@ body {
     background-image: url(./assets/background-stars.svg); 
     color: #FFFFFF;
     margin: 0;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -64,6 +65,20 @@ hr {
     margin: 0;
   position: absolute;
   top: 50%;
+}
+
+/* Mobile menus and navs*/
+
+.hamburger-container {
+    display: none;
+}
+
+.planet-variations-mobile {
+    display: none;
+}
+
+.mobile-buttons-container {
+    display: none;
 }
 
 
@@ -148,16 +163,17 @@ hr {
     padding: 0 15px;
 }
 
-/*.button:hover {
+.button:hover {
     cursor: pointer;
-    background-color: #38384F;
-} */
-
-
-#overview-button {
-    background-color: #6f2ed6; 
     
-    }
+} 
+
+
+ #overview-button {
+    background-color: #6f2ed6; 
+    } 
+
+
 
 
 /* manipulated things */ 
@@ -248,18 +264,358 @@ nav li {
     display: block;
     width: 100%;
     text-align: center;
+    font-size: 10px; 
+}
+
+
+.facts {
+    height: 650px;
 }
 
 .planet-picture-container {
-    display: block;
-    float:none;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
 
     /* padding: 0 20%; */
 }
 
 .planet-picture-container img {
     height: 300px;
+    margin: 0%;
+}
+
+#earth-geology-img {
+    left: auto;
+    top: 40%;
+    height: 150px;
+    width: auto;
+}
+
+
+.planet-info {
+    display: inline-block;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.planet-heading-facts {
+    display: inline-block;
+    width: 50%;
+}
+
+.planet-heading-facts h1 {
+    font-size: 60px;
+    padding-bottom: 2%;
+}
+
+.planet-fact-text {
+    width: 90%;
+}
+
+.button {
+    display: inline-block;
+    width: 80%;
+    
+}
+
+.buttons-container {
+    display: inline-block;
+    width: 50%;
+    position: absolute;
+    padding-top: 3%;
+}
+
+
+/* Planet info cards */
+
+.block-div {
+    width: auto;
+    padding: 0 5%;
+    
+}
+
+.container h2 {
+font-size: 20px;
+letter-spacing: 0px;
+}
+
+.container-4 {
+    margin-right: 0;
 }
 
 
 }
+
+
+@media screen and (max-width: 499px) and (min-width: 300px) {
+
+
+    .hamburger-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 35px;
+        width: 50%;
+        text-align: right;
+        
+    }
+
+    .hamburger-container img {
+        height: 20px;
+    }
+
+    .navbar-div {
+        height: 50px;
+        padding-top: 2%;
+        padding-right: 1%;
+        padding: 5%;
+        background-color: #070724;
+
+
+    }
+    
+    .page-title {
+        display: inline-block;
+        width: 50%;
+        font-size: 30px;
+        margin-top: 0;
+    }
+    
+
+    
+    .planet-variations {
+        display: none;
+    }
+
+    /* Planet nav mobile only */
+    
+    .planet-variations-mobile {
+        display: none;
+        color: white;
+        width: 100%;
+        font-family: 'League Spartan', sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.36px;
+        background-color: #070724;
+        padding-bottom: 30px;
+    }
+
+    .planet-variations-mobile ul {
+        display: block;
+        color: white;
+        width: 100%;
+        list-style-type: none;
+        padding-left: 5%;
+    }
+
+    .planet-variations-mobile li {
+        display: block;
+        color: white;
+        width: 100%;
+        padding: 10px 0;
+    }
+  
+    .planet::before {
+        display:          inline-block;
+        vertical-align:   middle;
+        width:            10px;
+        height:           10px;
+        border-radius: 5px;
+        margin-right:     10px;
+        content:          ' '
+      }
+
+      .planet span {
+        position: absolute;
+        right: 10%;
+        color:#b3aeae9d; 
+        align-self: center;
+      }
+
+      .mercury::before {
+        background-color: #DEF4FC;
+      }
+
+      .venus::before {
+        background-color: #F7CC7F;
+      }
+
+      .earth::before {
+        background-color: #545BFE;
+      }
+
+      .mars::before {
+        background-color: #FF6A45;
+      }
+
+      .jupiter::before {
+        background-color: #ECAD7A;
+      }
+
+      .saturn::before {
+        background-color: #FCCB6B;
+      }
+
+      .uranus::before {
+        background-color: #65F0D5;
+      }
+
+      .neptune::before {
+        background-color: #497EFA;
+      }
+
+
+      /* Planet facts buttons */
+
+      #web-button{
+        display: none;
+      }
+
+      .mobile-buttons-container {
+        display: block;
+        text-align: center;
+      }
+
+      .button {
+        max-width: 30%;
+        display: inline-block;
+        font-size: 12px;
+        padding: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid 3px;
+        border-bottom-color:  #6D2ED5;
+        text-align: center;
+      }
+
+
+    
+    .facts {
+        height: 650px;
+    }
+    
+    .planet-picture-container {
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    
+    .planet-picture-container img {
+        height: 300px;
+        margin: 0%;
+    }
+    
+    #earth-geology-img {
+        left: auto;
+        top: 45%;
+        height: 100px;
+        width: auto;
+    }
+    
+    
+    .planet-info {
+        display: inline-block;
+        width: 100%;
+        padding-top: 5%;
+    }
+    
+    .planet-heading-facts {
+        display: inline-block;
+        width: 50%;
+    }
+    
+    .planet-heading-facts h1 {
+        font-size: 60px;
+        padding-bottom: 2%;
+    }
+    
+    .planet-fact-text {
+        width: 90%;
+    }
+    
+    .button {
+        display: inline-block;
+        width: 80%;
+        
+    }
+    
+    .buttons-container {
+        display: inline-block;
+        width: 50%;
+        position: absolute;
+        padding-top: 3%;
+    }
+    
+    .facts {
+        height: 550px;
+    }
+
+    .planet-picture-container img {
+        height: 180px; 
+    }
+
+
+    .planet-heading-facts {
+        display: inline-block;
+        width: 100%; 
+        text-align: center;
+    }
+
+    .planet-fact-text {
+        width: 100%;
+    }
+    
+    /* Planet info cards */
+    
+    .block-div {
+        width: auto;
+        padding: 5% 5%;
+    }
+
+    .planet-info-cards {
+        display: block;
+        width: 100%;
+    }
+
+    .container {
+        border: 1px solid #9797974d;
+        width: 90%;
+        margin: 2% auto;
+        padding: 2% ;
+
+    }
+
+    .container h2 {
+        display: inline-block;
+        position: relative;
+        float: right;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    
+    .container h4 {
+        display: inline-block;
+    }
+
+
+   /* .container h2 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    }
+    
+    .container-4 {
+        margin-right: 0;
+    }
+    */
+    
+    }
+
