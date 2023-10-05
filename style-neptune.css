@@ -188,27 +188,28 @@ hr {
 } 
 
 .active {
-    background-color: #6f2ed6; 
+    background-color: #2D68F0; 
 }
+
 
 /* manipulated things */ 
 
-#earth-overview-paragraph {
+#neptune-overview-paragraph {
     display: block;
     height: 150px;
 }
 
-#earth-interior-paragraph {
+#neptune-interior-paragraph {
     display: none;
     height: 150px;
 }
 
-#earth-geology-paragraph {
+#neptune-geology-paragraph {
     display: none;
     height: 150px;
 }
 
-#earth-geology-img {
+#neptune-geology-img {
     height: 200px;
     width: auto;
     position: absolute;
@@ -302,7 +303,7 @@ nav li {
     margin: 0%;
 }
 
-#earth-geology-img {
+#neptune-geology-img {
     left: auto;
     top: 40%;
     height: 150px;
@@ -500,7 +501,7 @@ letter-spacing: 0px;
         border-left: none;
         border-right: none;
         border-bottom: solid 3px;
-        border-bottom-color:  #6D2ED5;
+        border-bottom-color:  #2D68F0;
         text-align: center;
       }
 
@@ -523,7 +524,7 @@ letter-spacing: 0px;
         margin: 0%;
     }
     
-    #earth-geology-img {
+    #neptune-geology-img {
         left: auto;
         top: 45%;
         height: 100px;

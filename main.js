@@ -1,11 +1,13 @@
 $(document).ready(() => {    
  
     
+/* Structure button changes */
+
 $('.structure-button').on('click', () => {
      $('#earth-img').attr("src", "./assets/planet-earth-internal.svg");
-     $('.overview-button').css('background-color', '#070724'); 
-     $('.structure-button').css('background-color', '#6f2ed6');
-     $('.surface-button').css('background-color', '#070724'); 
+     $('.overview-button').removeClass('active'); 
+     $('.structure-button').addClass('active');
+     $('.surface-button').removeClass('active');  
      $('#earth-overview-paragraph').css('display', 'none');
      $('#earth-interior-paragraph').css('display', 'block');
      $('#earth-geology-paragraph').css('display', 'none');
@@ -13,12 +15,13 @@ $('.structure-button').on('click', () => {
      $('#anchor-ref').attr("href", "https://en.wikipedia.org/wiki/Earth#Internal_structure");
 });
 
+/* Overview button changes */
 
 $('.overview-button').on('click', () => {
     $('#earth-img').attr("src", "./assets/planet-earth.svg");
-    $('.structure-button').css('background-color', '#070724'); 
-    $('.overview-button').css('background-color', '#6f2ed6');
-    $('.surface-button').css('background-color', '#070724'); 
+    $('.overview-button').addClass('active'); 
+     $('.structure-button').removeClass('active');
+     $('.surface-button').removeClass('active'); 
     $('#earth-overview-paragraph').css('display', 'block');
     $('#earth-interior-paragraph').css('display', 'none');
     $('#earth-geology-paragraph').css('display', 'none');
@@ -26,25 +29,26 @@ $('.overview-button').on('click', () => {
     $('#anchor-ref').attr("href", "https://en.wikipedia.org/wiki/Earth");
 });
 
+/* Surface button changes */
+
 $('.surface-button').on('click', () => {
     $('#earth-geology-img').css('display', 'block');
-    $('.surface-button').css('background-color', '#6f2ed6');
-    $('.structure-button').css('background-color', '#070724');
-    $('.overview-button').css('background-color', '#070724'); 
+    $('#earth-img').attr("src", "./assets/planet-earth.svg");
+    $('.overview-button').removeClass('active'); 
+    $('.structure-button').removeClass('active');
+    $('.surface-button').addClass('active'); 
     $('#earth-geology-paragraph').css('display', 'block');
     $('#earth-overview-paragraph').css('display', 'none');
     $('#earth-interior-paragraph').css('display', 'none');
     $('#anchor-ref').attr("href", "https://en.wikipedia.org/wiki/Earth#Surface");
 })
 
+/* Mobile menubar changes */
 
 $('#hamburger-icon').on('click', () => {
     $('.planet-variations-mobile').toggle(500);
     $('#earth-geology-img').css('display', 'none');
-
 }) 
- 
-
 
 
 

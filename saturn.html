@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- CSS sheet -->
+  <link rel="stylesheet" href="./style-saturn.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&family=League+Spartan:wght@400;600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+<body>
+
+<!-- Navbar -->  
+<nav>
+  <div class="navbar-div"> 
+
+  <div class="page-title">
+    <span>The planets</span>
+  </div>
+
+  <div class="planet-variations" >
+    <ul>
+      <li><a href="./index.html">Mercury</a></li>
+      <li><a href="./venus.html">Venus</a></li>
+      <li><a href="./earth.html">Earth</a></li>
+      <li><a href="./mars.html">Mars</a></li>
+      <li><a href="./jupiter.html">Jupiter</a></li>
+      <li><a href="./saturn.html">Saturn</a></li>
+      <li><a href="./uranus.html">Uranus</a></li>
+      <li><a href="./neptune.html">Neptune</a></li>
+    </ul>
+  </div>
+  <div class="hamburger-container">
+    <img src="./assets/icon-hamburger.svg" alt="hamburger-icon" id="hamburger-icon">
+    </div>
+</div>
+
+
+
+<!-- Mobile-only navbar -->
+<div class="planet-variations-mobile" id="mobile-button">
+  <ul>
+    <li class="planet mercury"> <a href="./index.html">Mercury</a> <span> > </span></li>
+    <hr>
+    <li class="planet venus"><a href="./venus.html">Venus</a> <span> > </span></li>
+    <hr>
+    <li class="planet earth"><a href="./earth.html">Earth</a> <span> > </span></li>
+    <hr>
+    <li class="planet mars"><a href="./mars.html">Mars</a><span> > </span> </li>
+    <hr>
+    <li class="planet jupiter"><a href="./jupiter.html">Jupiter</a><span> > </span> </li>
+    <hr>
+    <li class="planet saturn"><a href="./saturn.html">Saturn</a> <span> > </span> </li>
+    <hr>
+    <li class="planet uranus"><a href="./uranus.html">Uranus</a> <span> > </span> </li>
+    <hr>
+    <li class="planet neptune"><a href="./neptune.html">Neptune</a> <span> > </span> </li>
+  </ul>
+</div>
+
+<!-- Mobile-only buttons for planets-->
+
+<div class="mobile-buttons-container">
+
+  <div class="button overview-button mobile-overview"  > 
+    Overview 
+  </div>
+  
+  <div class="button structure-button mobile-structure"  > 
+   Structure
+  </div>
+  
+  <div class="button surface-button mobile-surface"  >
+    Surface 
+  </div>
+  
+  </div>
+
+
+
+</nav>
+<hr>
+
+<!-- Facts -->
+
+<div class="facts"> 
+  <div class="planet-picture-container">
+      <img id="saturn-img" src="./assets/planet-saturn.svg" alt="planet saturn">
+      <img id="saturn-geology-img" src="./assets/geology-saturn.png" alt="saturn-geology">
+      </div>
+
+  <div class="planet-info">
+    
+
+  <div class="planet-heading-facts"> 
+  <h1>Saturn</h1>
+
+  <div class="planet-fact-text" id="overview">
+
+
+  <!-- Overview Content Start -->
+
+  <p id="saturn-overview-paragraph"> Saturn is the sixth planet from the Sun and the second-largest in the Solar 
+    System, after Jupiter. It is a gas giant with an average radius of about 
+    nine and a half times that of Earth. It only has one-eighth the average 
+    density of Earth.</p>
+
+    <p id="saturn-interior-paragraph"> Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
+        is not in the gas phase, because hydrogen becomes a non-ideal liquid 
+        when the density is above 0.01 g/cm3, which is reached at a radius 
+        containing 99.9% of Saturn's mass. </p>
+
+  <p id="saturn-geology-paragraph">
+    The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
+  helium by volume. The planet's most famous feature is its prominent ring 
+  system, which is composed mostly of ice particles with a smaller amount 
+  of rocky debris and dust.
+  </p>    
+
+  <span>Source :</span> <a id="anchor-ref" href="https://en.wikipedia.org/wiki/Saturn ">Wikipedia</a> <img src="./assets/icon-source.svg" alt="source-icon">    
+  
+</div>
+</div> 
+
+<!-- Facts buttons start-->
+
+
+<div class="buttons-container" id="web-button" >
+
+<div class="button overview-button active"  > 
+  <span>01</span> Overview 
+</div>
+
+<div class="button structure-button"  > 
+  <span>02</span> Internal Structure
+</div>
+
+<div class="button surface-button"  > 
+  <span>03</span> Surface Geology
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- Planet basic info cards -->
+
+<div class="block-div">
+<div class="planet-info-cards">
+
+  <div class="container container-1">
+ <h4>Rotation Time</h4>
+   <h2>10.8 Hours</h2> 
+  </div>
+
+   <div class="container container-2">
+  <h4>Revolution Time</h4>
+  <h2>29.46 Years</h2> 
+</div>
+
+  <div class="container container-3">
+  <h4>Radius</h4>
+  <h2>58,232 KM</h2>
+</div>
+
+  <div class="container container-4">
+  <h4>Average Temp.</h4>
+  <h2>-138°c</h2> 
+</div>
+ 
+</div>
+
+
+  <!-- JS files -->
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+
+  <script src="saturn.js"></script>
+</body>
+</html>

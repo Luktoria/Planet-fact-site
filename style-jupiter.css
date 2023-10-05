@@ -188,33 +188,33 @@ hr {
 } 
 
 .active {
-    background-color: #6f2ed6; 
+    background-color: #D83A34; 
 }
 
 /* manipulated things */ 
 
-#earth-overview-paragraph {
+#jupiter-overview-paragraph {
     display: block;
     height: 150px;
 }
 
-#earth-interior-paragraph {
+#jupiter-interior-paragraph {
     display: none;
     height: 150px;
 }
 
-#earth-geology-paragraph {
+#jupiter-geology-paragraph {
     display: none;
     height: 150px;
 }
 
-#earth-geology-img {
+#jupiter-geology-img {
     height: 200px;
     width: auto;
     position: absolute;
     z-index: 1;    
-    left: 32%;
-    top: 60%;
+    left: 35%;
+    top: 70%;
     display: none;
 }
 
@@ -302,7 +302,7 @@ nav li {
     margin: 0%;
 }
 
-#earth-geology-img {
+#jupiter-geology-img {
     left: auto;
     top: 40%;
     height: 150px;
@@ -500,7 +500,7 @@ letter-spacing: 0px;
         border-left: none;
         border-right: none;
         border-bottom: solid 3px;
-        border-bottom-color:  #6D2ED5;
+        border-bottom-color:  #D83A34;
         text-align: center;
       }
 
@@ -523,7 +523,7 @@ letter-spacing: 0px;
         margin: 0%;
     }
     
-    #earth-geology-img {
+    #jupiter-geology-img {
         left: auto;
         top: 45%;
         height: 100px;
